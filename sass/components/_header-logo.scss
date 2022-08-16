@@ -1,0 +1,23 @@
+.header__logo {
+  @extend %reset-link;
+  color: var(--title-text-color);
+  font-family: raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 87px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
+}
