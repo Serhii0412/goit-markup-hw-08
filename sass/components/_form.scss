@@ -1,0 +1,116 @@
+.form__content{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.form__content--input{
+  position: relative;
+}
+
+.form__input{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border-color 250ms var(--cubic-bezier);
+
+&:hover,
+&:focus{
+  border-color: var(--accent-color);
+  outline: transparent;
+}
+&:hover + .form__svg,
+&:focus + .form__svg{
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+&:invalid:not(:placeholder-shown) {
+  border: 1px solid red;
+}
+}
+
+.form__text{
+  display: flex;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+.form__text-area{
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+
+&::placeholder{
+  color: rgba(117, 117, 117, 0.5);
+}
+}
+.form__svg{
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform:translateY(-25%);
+  fill: var(--cubic-bezier);
+
+  transition: color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
+}
+
+.form__label--checkbox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 12px;
+  margin-bottom: 30px;
+}
+.form__checkbox__text{
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.form__custom--checkbox {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 9px;
+
+  border: 2px solid #212121;
+  border-radius: 2px;
+
+.form__input--checkbox:checked + &{
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 9px;
+
+  border: 2px solid var(--accent-color);
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+}
+
+.form__checkbox__svg {
+  position: absolute;
+  fill: var(--white-color);
+
+.form__input--checkbox:checked + .form__custom--checkbox &{
+  opacity: 1;
+  color: var(--white-color);
+}
+}
+
+.form__checkbox__agreement{
+  color: var(--accent-color);
+}
