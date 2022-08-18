@@ -11,7 +11,7 @@
   transform: translateX(100%);
 }
 
-.menu__container .is-open{
+.menu__container.is-open{
   transform: translateX(0);
   pointer-events: initial;
   visibility: visible;
