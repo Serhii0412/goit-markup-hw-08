@@ -1,0 +1,26 @@
+.advantages__subtitle,
+.examples__subtitle,
+.team__subtitle,
+.section-team,
+.project-title,
+.clients__subtitle {
+  color: var(--title-text-color);
+}
+
+.examples__subtitle,
+.team__subtitle,
+.clients__subtitle {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  margin-bottom: 30px;
+  
+  @media screen and (min-width:1200px) {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.16;
+      text-align: center;
+      margin-bottom: 50px;
+  }
+}

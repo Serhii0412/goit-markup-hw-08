@@ -1,0 +1,37 @@
+.examples {
+  @extend %section;
+  padding-top: 0px;
+  
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.examples__list{
+  @extend %reset-list;
+  display: flex;
+  align-items: center;
+}
+
+.examples__item {
+  position: relative;
+  display: flex;
+  margin-right: 30px;
+}
+
+.examples__title{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  height: 70px;
+  background-color: var(--bg-color-examples);
+  text-transform: uppercase;
+
+  font-weight: 700;
+  line-height: 1.14;
+  color: var(--white-color);
+}
